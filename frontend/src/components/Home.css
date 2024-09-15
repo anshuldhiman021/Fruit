@@ -1,0 +1,90 @@
+/* Background styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #D9AFD9, #97D9E1); /* Gradient background */
+  }
+  
+  /* Title and subtitle */
+  .title {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subtitle {
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid container for buttons */
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 300px;
+  }
+  
+  /* Button styles */
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Individual button colors */
+  .chat {
+    background-color: #FFD580; /* Light Orange */
+    color: #D35D6E;
+  }
+  
+  .translator {
+    background-color: #E2FF9A; /* Light Green */
+    color: #558776;
+  }
+  
+  .faq {
+    background-color: #D9BBF9; /* Light Purple */
+    color: #3B4B6B;
+  }
+  
+  .about {
+    background-color: #FDA7DF; /* Light Pink */
+    color: #574D68;
+  }
+  
+  /* Rounded button edges */
+  .button {
+    border-radius: 20px;
+  }
+  
+  /* Small dots to indicate pages (optional, similar to the dots on the image) */
+  .home-container::after {
+    content: '•••';
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 1.5rem;
+    display: block;
+  }
+  
